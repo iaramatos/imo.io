@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>IMO</title>
+</head>
+<body>
+    <header>
+        <h1>LIFE IN PICTURE</h1>
+        <img src="img/imo-removebg-preview.png" width="30%" margin="300px" alt="logo" style="
+        padding-right: 67px">
+        
+    </header>
+
+    <main>
+        <section id="intro">
+            <h2>Bem-vindo ao Meu Mundo de Fotografias</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla dapibus felis ut urna fermentum, a interdum velit tincidunt.</p>
+        </section>
+
+        <section id="features">
+            <h3>Meu Portifólio</h3>
+            <div class="carousel-container">
+                <div class="carousel-slider" id="slider">
+                    <img src="./img/img1.jpg" alt="Imagem 1">
+                    <img src="./img/img2.jpg" alt="Imagem 2">
+                    <img src="./img/img3.jpg" alt="Imagem 3">
+                    <img src="./img/img4.jpg" alt="Imagem 4">
+                    <img src="./img/img5.jpg" alt="Imagem 5">
+                    <img src="./img/img6.jpg" alt="Imagem 6">
+                </div>
+                <button class="prev" onclick="changeSlide(-1)">&#10094;</button>
+                <button class="next" onclick="changeSlide(1)">&#10095;</button>
+            </div>
+        </section>
+
+        <section id="contact">
+            <h3>Newsletter - Receba dicas de como fazer os melhores registros fotográficos</h3>
+            <form id="contactForm">
+                <label for="name">Nome:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email" required>
+
+                <button type="button" onclick="submitForm()">Enviar</button>
+            </form>
+            <div id="confirmationMessage"></div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 IMO. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
